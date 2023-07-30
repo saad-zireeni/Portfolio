@@ -61,17 +61,15 @@ const Navbar = () => {
              <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => (
                 <li
-                  key={link.id}
-                  className={`${
-                    active === link.title ? "text-white" : "text-secondary"
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(link.title);
-                  }}
-                >
-                  <a href={`#${link.id}`}>{link.title}</a>
-                </li>
+                key={link.id}
+                className={`${
+                  active === link.title || (active === "resume" && link.title === "Download Resume") ? "text-white" : "text-secondary"
+                } hover:text-white text-[18px] cursor-pointer font-medium`}
+                onClick={() => setActive(link.title)}
+              >
+                <a href={link.title === "Download Resume" ? resumeUrl : `#${link.id}`}target={link.title === "Download Resume" ? "_blank" : ""}>{link.title}</a>
+                
+              </li>
               ))}
             </ul>
           </div>
