@@ -1,4 +1,4 @@
-import portfolioLogo from "./portfolioLogo.png";
+import portfoliologo from "./portfoliologo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -34,7 +34,7 @@ import itsaf from "./itsaf.png";
 import hackathon from './hackathon.jpg';
 
 export {
-  portfolioLogo,
+  portfoliologo,
   backend,
   creator,
   mobile,
