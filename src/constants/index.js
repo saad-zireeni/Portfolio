@@ -166,7 +166,7 @@ const competitions = [
     tags: [
       {
         name: "1st Place",
-        color: "blue-text-gradient",
+        color: "text-gold",
       },
     ],
     image: omjc,
@@ -178,7 +178,7 @@ const competitions = [
     tags: [
       {
         name: "1st Place",
-        color: "blue-text-gradient",
+        color: "text-gold",
       },
     ],
     image: hackathon,
@@ -190,7 +190,7 @@ const competitions = [
     tags: [
       {
         name: "3rd Place",
-        color: "blue-text-gradient",
+        color: "text-bronze",
       },
     ],
     image: itsaf,
